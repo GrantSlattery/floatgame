@@ -61,9 +61,9 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(20, 20, "bee.gif", 10, 120);
+    myGamePiece = new component(20, 20, "bee.gif", 10, 120, "image");
     myGamePiece.gravity = 0.05;
-    myScore = new component("15px", "Consolas", "black", 150, 20, "image");
+    myScore = new component("15px", "Consolas", "black", 150, 20);
     myGameArea.start();
 }
 
