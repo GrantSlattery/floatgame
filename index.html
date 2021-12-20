@@ -112,7 +112,6 @@ function component(width, height, color, x, y, type) {
             ctx.fillStyle = color;
             ctx.fillRect(this.x, this.y, this.width, this.height);
             
-            ctx.font = this.width + " " + this.height;
             ctx.fillText(this.text, this.x, this.y);
         }
     }
