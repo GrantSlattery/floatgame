@@ -93,6 +93,8 @@ var myGamePiece;
 var myBackground;
 var myObstacles = [];
 var myScore;
+var myMusic;
+
     
 
 
@@ -100,7 +102,8 @@ var myScore;
 function startGame() {
     myGamePiece = new component(30, 30, "bee.gif", 25, 120, "image");
     myBackground = new component(400, 150, "beegamebackground.png", 0, 0, "image");
-
+    myMusic = new sound("gametheme.mp3");
+    myMusic.play();
     myGamePiece.gravity = 0.05;
     myScore = new component("15px", "Consolas", "black", 25, 20);
     myGameArea.start();
