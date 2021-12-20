@@ -133,7 +133,7 @@ function component(width, height, color, x, y, type) {
         }
     }
     this.hitTop = function() {
-        var rocktop = myGameArea.canvas.height;
+        var rocktop = this.height - myGameArea.canvas.height;
         if (this.y < rocktop) {
             this.y = rocktop;
             this.gravitySpeed = 0;
