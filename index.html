@@ -59,6 +59,7 @@ button {
 <script>
 
 var myGamePiece;
+var myBackground;
 var myObstacles = [];
 var myScore;
     
@@ -67,6 +68,8 @@ var myScore;
 
 function startGame() {
     myGamePiece = new component(30, 30, "bee.gif", 15, 120, "image");
+    myBackground = new component(656, 270, "bee.gif", 0, 0, "image");
+
     myGamePiece.gravity = 0.05;
     myScore = new component("15px", "Consolas", "black", 25, 20);
     myGameArea.start();
@@ -165,6 +168,8 @@ function updateGameArea() {
     }
     myGameArea.clear();
     myGameArea.frameNo += 1;
+    myBackground.newPos();
+    myBackground.update();
     if (myGameArea.frameNo == 1 || everyinterval(150)) {
         x = myGameArea.canvas.width;
         minHeight = 20;
