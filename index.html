@@ -106,6 +106,9 @@ function component(width, height, color, x, y, type) {
                 this.x, 
                 this.y,
                 this.width, this.height);
+            ctx.font = this.width + " " + this.height;
+            ctx.fillStyle = color;
+            ctx.fillText(this.text, this.x, this.y);
             
         } else {
             ctx.fillStyle = color;
