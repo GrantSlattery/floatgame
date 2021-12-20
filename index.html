@@ -7,6 +7,19 @@ canvas {
     border:1px solid #d3d3d3;
     background-color: cyan;
 }
+    
+    
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+    
 </style>
 </head>
 <body onload="startGame()">
@@ -114,7 +127,7 @@ function updateGameArea() {
         myObstacles[i].x += -1;
         myObstacles[i].update();
     }
-    myScore.text="Distance (Yds): " + myGameArea.frameNo;
+    myScore.text="Distance: " + myGameArea.frameNo;
     myScore.update();
     myGamePiece.newPos();
     myGamePiece.update();
