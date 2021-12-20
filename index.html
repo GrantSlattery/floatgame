@@ -111,8 +111,8 @@ function component(width, height, color, x, y, type) {
         } else {
             ctx.fillStyle = color;
             ctx.fillRect(this.x, this.y, this.width, this.height);
-            
-            ctx.fillText(this.text, this.x, this.y);
+            ctx.font = this.width + " " + this.height;
+
         }
     }
     this.newPos = function() {
