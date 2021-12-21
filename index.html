@@ -67,6 +67,15 @@ button {
     
 }
     
+    
+ .mid {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
+    
 .footer {
    position: fixed;
    left: 0;
@@ -239,16 +248,21 @@ function accelerate(n) {
 <button onmousedown="accelerate(-0.1)" onmouseup="accelerate(0.13)" ontouchstart="accelerate(-0.1)" ontouchend="accelerate(0.13)">FLY</button>
 </div>
     
+<div class="mid">
     
-
-
-<div class="footer">
-    
-<br>
+    <br>
 <p>BEE GAME: Use the FLY button to dodge vines & stay in the air</p>
 <br>
     <button onClick="window.location.reload();">Reset</button>
 <br>
+    
+</div>
+
+
+
+<div class="footer">
+    
+
 <a href="https://github.com/GrantSlattery" target="_blank"><img src="GitHub-Mark-64px.png" alt="github social icon"></a>
 
 </div>
