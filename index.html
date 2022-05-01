@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Fly Game </title>
+<title> Float Game </title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="icon" type="image/x-icon" href="robotc.gif">
 <link rel="stylesheet" href="stylesheet.css">   
@@ -11,7 +11,7 @@
 
 </head>
 <body onload="startGame()">
-<p>Use the 'Fly' button to stay up</p>
+<p>Use the 'Float' button to stay up</p>
 <script>
 
 var myGamePiece;
@@ -169,7 +169,7 @@ function accelerate(n) {
 <br>
     
 <div class="FLYButtonDiv">    
-<button onmousedown="accelerate(-0.1)" onmouseup="accelerate(0.13)" ontouchstart="accelerate(-0.1)" ontouchend="accelerate(0.13)">Fly</button>
+<button onmousedown="accelerate(-0.1)" onmouseup="accelerate(0.13)" ontouchstart="accelerate(-0.1)" ontouchend="accelerate(0.13)">Float</button>
    <br>
    <button onClick="window.location.reload();">Reset</button>
 
