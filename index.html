@@ -240,8 +240,8 @@ function updateGameArea() {
         minGap = 100;
         maxGap = 175;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-        myObstacles.push(new component(10, height, "bamboo.gif", x, 0, "image"));
-        myObstacles.push(new component(10, x - height - gap, "bamboo.gif", x, height + gap, "image"));
+        myObstacles.push(new component(10, height, "asteroidobstacle.gif", x, 0, "image"));
+        myObstacles.push(new component(10, x - height - gap, "asteroidobstacle.gif", x, height + gap, "image"));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
         myObstacles[i].x += -1;
