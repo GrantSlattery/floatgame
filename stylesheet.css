@@ -1,1 +1,105 @@
+canvas {
+    border:2px solid black;
+   border-radius: 8px;
+    background-color: MidnightBlue;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 600px;
 
+
+}
+
+html {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+    
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: url("alienbackground.png");
+    background-color: SkyBlue;
+    font-family: "Audiowide", sans-serif;
+
+}
+    
+p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    
+    
+}
+button {
+  background-color: grey;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: white;
+  padding: 16px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: auto;
+  font-family: "Audiowide", sans-serif;
+}
+   
+button:hover {
+  opacity: 0.9;
+   cursor: pointer;
+}
+  
+    
+
+    
+
+    
+    /* Footer */
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+  background-color: rgb(48,48,48);
+}
+  
+.footer p {
+  font-size: 13px;
+  color: white;
+  font-weight:bold;
+  text-transform: uppercase;
+
+}
+    
+    
+.FLYButtonDiv {
+   position: fixed;
+   left: 0;
+   width: 100%;
+   text-align: center;
+}
+    
