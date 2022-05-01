@@ -89,7 +89,7 @@ function component(width, height, color, x, y, type) {
         this.x += this.speedX;
         this.y += this.speedY + this.gravitySpeed;
         this.hitBottom();
-        this.hitTop();
+        <!--  this.hitTop(); -->
 
 
     }
@@ -100,6 +100,7 @@ function component(width, height, color, x, y, type) {
             this.gravitySpeed = -(this.gravitySpeed * this.bounce);
         }
     }
+   <!--
    this.hitTop = function() {
         var peaktop = myGameArea.canvas.height;
         if (this.y > peaktop) {
@@ -107,6 +108,8 @@ function component(width, height, color, x, y, type) {
             this.gravitySpeed = (this.gravitySpeed * this.bounce);
         }
     }
+   -->
+   
     
     this.crashWith = function(otherobj) {
         var myleft = this.x;
